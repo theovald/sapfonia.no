@@ -1,3 +1,4 @@
+/* Establishing root CSS variables */
 :root {
   --pride-gradient: linear-gradient(
     45deg,
@@ -10,16 +11,17 @@
   );
 }
 
+/* Basic settings for body */
 body {
   font-family: 'Optima';
   line-height: 1.9;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  /*background: var(--pride-gradient); */
   background: black;
 }
 
+/* Navbar styles */
 nav {
   background: rgba(86, 102, 178, 1);
   height: 60px;
@@ -31,48 +33,57 @@ nav {
   border-radius: 50px;
 }
 
+/* Styles for logo in nav */
 nav .logo {
   display: flex;
   align-items: center;
   margin-right: auto;
 }
 
+/* Styles for logo's image in nav */
 nav .logo img {
   height: 70px; /* Adjust size as needed */
 }
 
+/* Styles for menu icon in nav */
 nav .menu-icon {
   display: none;
   cursor: pointer;
   margin-right: auto;
 }
 
+/* Styles for nav right section */
 nav .nav-right {
   display: flex;
   align-items: center;
 }
 
+/* Styles for navigation links */
 nav ul.nav-links {
   list-style: none;
   display: flex;
   margin-right: 20px;
 }
 
+/* Style for each navigation link */
 nav ul.nav-links li {
   display: inline;
   margin-left: 20px;
 }
 
+/* Styles for link tags inside nav */
 nav ul.nav-links li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
+/* Styles for social media links in nav */
 nav .socials {
   display: flex;
   align-items: center;
 }
 
+/* Styles for link tags inside socials */
 nav .socials a {
   color: rgb(255, 255, 255);
   margin-left: 10px;
@@ -81,14 +92,12 @@ nav .socials a {
   transition: color 0.5s;
 }
 
+/* Styles when hovering over social media links */
 nav .socials a:hover {
   color: #de68ff;
 }
 
-a:hover {
-  color: #de68ff;
-}
-
+/* Styles for footer */
 footer {
   color: var(--pride-gradient);
   background-color: var(--pride-gradient);
@@ -98,6 +107,7 @@ footer {
   border-radius: 50px;
 }
 
+/* Mobile responsive styles */
 @media (max-width: 600px) {
   nav ul.nav-links {
     display: none;
@@ -112,38 +122,46 @@ footer {
 
   nav ul.nav-links li {
     display: block;
+    /* Styles for navigation links item in mobile view */
     margin: 20px 0;
   }
 
+  /* Display menu icon in mobile view */
   nav .menu-icon {
     display: block;
   }
 
+  /* Keep social icons visible in mobile view */
   nav .socials {
     display: flex;
   }
 }
 
+/* Global link style */
 a {
   color: #de68ff;
   text-decoration: none;
 }
 
+/* Container for content, limits the max width */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 0px;
 }
 
+/* Generic section padding */
 section {
   padding: 45px 45px;
   border-radius: 50px;
 }
 
+/* Class for backgrounds with a pride gradient */
 .rainbow {
   background: var(--pride-gradient);
 }
 
+/* Global styles for heading tags */
 h1,
 h2,
 h3 {
@@ -155,6 +173,7 @@ h3 {
   max-width: 500px;
 }
 
+/* Global styles for paragraph tags */
 p {
   margin-bottom: 20px;
   text-align: center;
@@ -164,83 +183,63 @@ p {
   max-width: 500px;
 }
 
+/* Global styles for images */
 img {
   border-radius: 50px;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Media query for paragraph tags in mobile view */
 @media only screen and (max-width: 500px) {
   p {
     width: 100%;
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* Special classes for colored text with white shadow */
+.specialred,
+.specialorange,
+.specialyellow,
+.specialgreen,
+.specialblue,
+.specialindigo,
+.specialpurple {
+  /* 1 pixel white shadow to left, top, right and bottom */
+  /* text-shadow: -0px 0 white, 0 0px white, 0px 0 white, 0 -0px white;  */
+  /* make 2 times larger than normal text */
+  font-size: 2em;
 }
 
 .specialred {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(203, 77, 61);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
 
 .specialorange {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(229, 172, 73);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
 
 .specialyellow {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(249, 219, 79);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
 
 .specialgreen {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(96, 170, 86);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
 
 .specialblue {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(82, 181, 220);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
 
 .specialindigo {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(85, 100, 155);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
 
 .specialpurple {
-  /* 1 pixel black shadow to left, top, right and bottom */
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-
   color: rgba(130, 87, 140);
-  /* make 2 times larger than normal text */
-  font-size: 2em;
 }
+
+/* Styles for concert section */
 .concert {
   display: flex;
   flex-direction: column;
@@ -248,10 +247,12 @@ img {
   text-align: center;
 }
 
+/* Styles for header within concert section */
 .header {
   margin-bottom: 20px;
 }
 
+/* Styles for content within concert section */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -259,23 +260,29 @@ img {
   align-items: flex-start;
 }
 
+/* Styles for details within concert section */
 .details {
   flex: 1;
   margin-right: 20px;
   max-width: 400px; /* Adjust the max width as needed */
 }
 
+/* Styles for thumbnail within concert section */
 .thumbnail {
   flex: 0 0 300px; /* Adjust the size of the thumbnail as needed */
   margin-top: 20px;
   text-align: center;
 }
 
+/* Styles for image
+    
+/* Styles for image within thumbnail section in concert section */
 .thumbnail img {
   width: 100%;
   height: auto;
 }
 
+/* Styles for navigation links and footer links on hover */
 nav ul.nav-links li a:hover,
 footer a:hover {
   color: #de68ff;
