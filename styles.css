@@ -135,6 +135,10 @@ footer {
   nav .socials {
     display: flex;
   }
+
+  p {
+    width: 100%;
+  }
 }
 
 /* Global link style */
@@ -188,13 +192,6 @@ img {
   border-radius: 50px;
   max-width: 100%;
   height: auto;
-}
-
-/* Media query for paragraph tags in mobile view */
-@media only screen and (max-width: 500px) {
-  p {
-    width: 100%;
-  }
 }
 
 /* Special classes for colored text with white shadow */
