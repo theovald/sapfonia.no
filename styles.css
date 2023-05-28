@@ -284,3 +284,11 @@ nav ul.nav-links li a:hover,
 footer a:hover {
   color: #de68ff;
 }
+
+/* Style to center an image with a max width */
+.centerimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
