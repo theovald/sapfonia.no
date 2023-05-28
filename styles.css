@@ -108,7 +108,7 @@ footer {
 }
 
 /* Mobile responsive styles */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   nav ul.nav-links {
     display: none;
     flex-direction: column;
